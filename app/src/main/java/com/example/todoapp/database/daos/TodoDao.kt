@@ -13,6 +13,6 @@ interface TodoDao {
     @Delete
     suspend fun delete(todo: Todo)
     @Query("SELECT * From Todo")
-    fun getAllUsers(): List<Todo>
-    abstract fun getAllTodos(): Any
+    fun getAllTodos(): List<Todo>
+
 }
